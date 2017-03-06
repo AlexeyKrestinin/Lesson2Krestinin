@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8AC3F46D1E6C319B00F3AAA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3F46C1E6C319B00F3AAA6 /* AppDelegate.swift */; };
-		8AC3F46F1E6C319B00F3AAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3F46E1E6C319B00F3AAA6 /* ViewController.swift */; };
 		8AC3F4721E6C319B00F3AAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC3F4701E6C319B00F3AAA6 /* Main.storyboard */; };
 		8AC3F4741E6C319B00F3AAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC3F4731E6C319B00F3AAA6 /* Assets.xcassets */; };
 		8AC3F4771E6C319B00F3AAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC3F4751E6C319B00F3AAA6 /* LaunchScreen.storyboard */; };
+		8AC3F47F1E6C412B00F3AAA6 /* MacFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3F47E1E6C412B00F3AAA6 /* MacFonts.swift */; };
+		8AC3F4851E6C6BDD00F3AAA6 /* MacFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3F4841E6C6BDD00F3AAA6 /* MacFontsViewController.swift */; };
+		8AC3F4871E6DD97E00F3AAA6 /* FontDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3F4861E6DD97E00F3AAA6 /* FontDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AC3F4691E6C319B00F3AAA6 /* Lesson2Krestinin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson2Krestinin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC3F46C1E6C319B00F3AAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AC3F46E1E6C319B00F3AAA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8AC3F4711E6C319B00F3AAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AC3F4731E6C319B00F3AAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC3F4761E6C319B00F3AAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC3F4781E6C319B00F3AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC3F47E1E6C412B00F3AAA6 /* MacFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacFonts.swift; sourceTree = "<group>"; };
+		8AC3F4841E6C6BDD00F3AAA6 /* MacFontsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacFontsViewController.swift; sourceTree = "<group>"; };
+		8AC3F4861E6DD97E00F3AAA6 /* FontDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		8AC3F46B1E6C319B00F3AAA6 /* Lesson2Krestinin */ = {
 			isa = PBXGroup;
 			children = (
-				8AC3F46C1E6C319B00F3AAA6 /* AppDelegate.swift */,
-				8AC3F46E1E6C319B00F3AAA6 /* ViewController.swift */,
+				8AC3F4831E6C58F300F3AAA6 /* Support */,
+				8AC3F4821E6C58D600F3AAA6 /* Models */,
 				8AC3F4701E6C319B00F3AAA6 /* Main.storyboard */,
+				8AC3F4841E6C6BDD00F3AAA6 /* MacFontsViewController.swift */,
+				8AC3F4861E6DD97E00F3AAA6 /* FontDetailsViewController.swift */,
 				8AC3F4731E6C319B00F3AAA6 /* Assets.xcassets */,
+			);
+			path = Lesson2Krestinin;
+			sourceTree = "<group>";
+		};
+		8AC3F4821E6C58D600F3AAA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AC3F47E1E6C412B00F3AAA6 /* MacFonts.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8AC3F4831E6C58F300F3AAA6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8AC3F46C1E6C319B00F3AAA6 /* AppDelegate.swift */,
 				8AC3F4751E6C319B00F3AAA6 /* LaunchScreen.storyboard */,
 				8AC3F4781E6C319B00F3AAA6 /* Info.plist */,
 			);
-			path = Lesson2Krestinin;
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +118,7 @@
 				TargetAttributes = {
 					8AC3F4681E6C319B00F3AAA6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B553CN2745;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC3F46F1E6C319B00F3AAA6 /* ViewController.swift in Sources */,
 				8AC3F46D1E6C319B00F3AAA6 /* AppDelegate.swift in Sources */,
+				8AC3F4851E6C6BDD00F3AAA6 /* MacFontsViewController.swift in Sources */,
+				8AC3F4871E6DD97E00F3AAA6 /* FontDetailsViewController.swift in Sources */,
+				8AC3F47F1E6C412B00F3AAA6 /* MacFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Lesson2Krestinin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Lesson2Krestinin;
@@ -272,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Lesson2Krestinin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Lesson2Krestinin;
